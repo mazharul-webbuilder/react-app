@@ -1,11 +1,17 @@
 import Card from "./components/Card";
+import Data from "./data.json";
+
+
+console.log(Data);
 
 function App()
 {
     return <div>
-        <Card titleText="Call Mother" descriptionText="This is description 1"/>
-        <Card titleText="Call Father" descriptionText="This is description 2"/>
-        <Card titleText="Call Wife" descriptionText="This is description 3"/>
+        <Card titleText={Data[0].title} descriptionText={Data[0].desc}/>
+        <Card titleText={Data[1].title} descriptionText={Data[1].desc}/>
+        <Card titleText={Data[2].title} descriptionText={Data[2].desc}/>
+        <Card titleText={Data[3].title} descriptionText={Data[3].desc}/>
+        <Card titleText={Data[4].title} descriptionText={Data[4].desc}/>
     </div>
 }
 
